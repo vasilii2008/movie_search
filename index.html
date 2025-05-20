@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск фильмов</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Поиск фильмов</h1>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Введите название фильма...">
+                <button id="searchButton">Поиск</button>
+            </div>
+        </header>
+
+        <main>
+            <div id="filters">
+                <select id="yearFilter">
+                    <option value="">Все годы</option>
+                </select>
+                <select id="genreFilter">
+                    <option value="">Все жанры</option>
+                </select>
+            </div>
+
+            <div id="moviesGrid" class="movies-grid"></div>
+        </main>
+
+        <div id="movieDetails" class="movie-details">
+            <div class="movie-details-content">
+                <img id="moviePoster" src="" alt="Постер фильма">
+                <div class="movie-info">
+                    <h2 id="movieTitle"></h2>
+                    <p id="movieOverview"></p>
+                    <div id="movieDetailsInfo">
+                        <p><strong>Год:</strong> <span id="movieYear"></span></p>
+                        <p><strong>Жанр:</strong> <span id="movieGenres"></span></p>
+                        <p><strong>Рейтинг:</strong> <span id="movieRating"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
